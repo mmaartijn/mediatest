@@ -5,7 +5,6 @@ function createMedia(){
         function(){ 
             //alert('success!');
         }, function(err){
-            alert('err');
             alert(err.message); 
         }
     );
@@ -27,7 +26,7 @@ $(document).ready(function(){
                 playRecordedFile();
                 break;
             case 'btnPause':
-                playRecordedFile();
+                pauseRecordedFile();
                 break;
         }
     });
