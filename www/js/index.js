@@ -25,8 +25,8 @@ $(document).ready(function(){
             case 'btnPlay':
                 playRecordedFile();
                 break;
-            case 'btnPause':
-                pauseRecordedFile();
+            case 'btnStopPlay':
+                stopRecordedFile();
                 break;
         }
     });
@@ -54,13 +54,13 @@ function stopRecording(){
 function playRecordedFile(){
     $('#btnStart').prop('disabled', true);
     $('#btnPlay').prop('disabled', true);
-    $('#btnPause').prop('disabled', false);
+    $('#btnStopPlay').prop('disabled', false);
     media = createMedia();
     media.play();
 }
 
 function stopRecordedFile(){
-    $('#btnPayse').prop('disabled', true);
+    $('#btnStopPlay').prop('disabled', true);
     $('#btnStart').prop('disabled', false);
     $('#btnPlay').prop('disabled', false);
 
