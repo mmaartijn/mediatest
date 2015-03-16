@@ -1,7 +1,7 @@
 var media;
 
 function createMedia(){
-    return new Media('nl.avans.mmaartijn.mediatest/myFile.mp3', 
+    return new Media('myFile.mp3', 
         function(){ 
             //alert('success!');
         }, function(err){
