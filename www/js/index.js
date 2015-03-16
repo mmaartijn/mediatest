@@ -59,10 +59,11 @@ function playRecordedFile(){
     media.play();
 }
 
-function pauseRecordedFile(){
+function stopRecordedFile(){
     $('#btnPayse').prop('disabled', true);
     $('#btnStart').prop('disabled', false);
     $('#btnPlay').prop('disabled', false);
 
     media.pause();
+    media.release();
 }
