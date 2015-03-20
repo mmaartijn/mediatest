@@ -31,7 +31,7 @@
 
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <title>Media test</title>
+        <title>Shine festival</title>
     </head>
     <body>
         <div data-role="page">
@@ -39,12 +39,12 @@
                 <h3>Media opnemen en afspelen</h3>
             </div>
             <div class="main">
-                <button id="btnStart">Start opname</button>
+                <button id="btnStart" disabled>Start opname</button>
                 <button id="btnStop" disabled>Stop opname</button>
+                <h1 id="textSecondsLeft">00:30</h1>
                 <button id="btnPlay" disabled>Speel opname</button>
-                <button id="btnStopPlay" disabled>Stop opname</button>
-                <h3>Je laatste actie was: </h3>
-                <h1 id="txtLastButton"></h1>
+                <button id="btnSend" disabled>Verzend opname</button>
+                <p id="textSendStatus"></p>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h3>@mmaartijn</h3>
